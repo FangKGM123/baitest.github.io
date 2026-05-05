@@ -1,0 +1,466 @@
+<!doctype html>
+
+<html class="light" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#785f35",
+              "on-tertiary-container": "#94938f",
+              "on-primary-container": "#819986",
+              "tertiary-fixed-dim": "#c8c6c2",
+              "surface-container-low": "#f5f3f3",
+              "primary-container": "#1b3022",
+              "tertiary-container": "#2b2c29",
+              "secondary-container": "#fddba7",
+              "on-tertiary": "#ffffff",
+              surface: "#fbf9f8",
+              "surface-container-highest": "#e4e2e2",
+              "on-background": "#1b1c1c",
+              "on-error": "#ffffff",
+              primary: "#061b0e",
+              "secondary-fixed-dim": "#e3c290",
+              "on-surface-variant": "#434843",
+              "surface-container": "#efeded",
+              "inverse-on-surface": "#f2f0f0",
+              "surface-container-lowest": "#ffffff",
+              error: "#ba1a1a",
+              tertiary: "#171815",
+              "tertiary-fixed": "#e4e2dd",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              secondary: "#735a31",
+              "surface-variant": "#e4e2e2",
+              background: "#fbf9f8",
+              "surface-bright": "#fbf9f8",
+              "outline-variant": "#c3c8c1",
+              "on-tertiary-fixed-variant": "#474744",
+              "on-secondary-fixed": "#281900",
+              "on-secondary-fixed-variant": "#59431c",
+              outline: "#737973",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdeac",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#364c3c",
+              "surface-tint": "#4d6453",
+              "primary-fixed-dim": "#b4cdb8",
+              "inverse-surface": "#303030",
+              "on-primary-fixed": "#0b2013",
+              "on-tertiary-fixed": "#1b1c19",
+              "primary-fixed": "#d0e9d4",
+              "surface-container-high": "#eae8e7",
+              "surface-dim": "#dbd9d9",
+              "inverse-primary": "#b4cdb8",
+              "on-surface": "#1b1c1c",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "stack-sm": "16px",
+              "container-max": "1280px",
+              gutter: "24px",
+              unit: "8px",
+              "stack-lg": "64px",
+              "margin-page": "40px",
+              "stack-md": "32px",
+            },
+            fontFamily: {
+              "label-sm": ["Manrope"],
+              "headline-lg": ["Manrope"],
+              "headline-md": ["Manrope"],
+              "body-lg": ["Manrope"],
+              "body-md": ["Manrope"],
+              "display-xl": ["Manrope"],
+            },
+            fontSize: {
+              "label-sm": [
+                "14px",
+                {
+                  lineHeight: "1.5",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+              "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "display-xl": ["48px", { lineHeight: "1.2", fontWeight: "700" }],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      body {
+        background-color: #fbf9f8;
+      }
+    </style>
+    <title>Cao Thảo Dược Xương Khớp Hoa Ban</title>
+  </head>
+  <body class="font-body-md text-on-background">
+    <!-- TopAppBar -->
+    <header class="bg-white sticky top-0 z-50 border-b border-zinc-100">
+      <div
+        class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto"
+      >
+        <div class="text-2xl font-bold tracking-tighter text-[#1B3022]">
+          Nhà Thuốc Đông Y Hoa Ban
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="font-manrope text-sm tracking-wide uppercase text-[#1B3022] font-semibold border-b border-[#1B3022]"
+            href="#"
+            >Shop</a
+          >
+          <a
+            class="font-manrope text-sm tracking-wide uppercase text-zinc-500 hover:text-[#1B3022] transition-colors duration-200"
+            href="#"
+            >Ingredients</a
+          >
+          <a
+            class="font-manrope text-sm tracking-wide uppercase text-zinc-500 hover:text-[#1B3022] transition-colors duration-200"
+            href="#"
+            >Our Process</a
+          >
+          <a
+            class="font-manrope text-sm tracking-wide uppercase text-zinc-500 hover:text-[#1B3022] transition-colors duration-200"
+            href="#"
+            >About Us</a
+          >
+        </nav>
+        <div class="flex items-center gap-6">
+          <span
+            class="material-symbols-outlined text-[#1B3022] cursor-pointer hover:bg-zinc-50 p-2 rounded-full transition-all"
+            data-icon="shopping_cart"
+            >shopping_cart</span
+          >
+          <span
+            class="material-symbols-outlined text-[#1B3022] cursor-pointer hover:bg-zinc-50 p-2 rounded-full transition-all"
+            data-icon="person"
+            >person</span
+          >
+        </div>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-8 py-16">
+      <!-- Main Product Section -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+        <!-- Left: Product Image -->
+        <div class="relative group">
+          <div
+            class="aspect-square bg-white border border-outline-variant overflow-hidden"
+          >
+            <img
+              alt="Cao Thảo Dược Xương Khớp Hoa Ban"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              data-alt="A premium, elegant dark glass apothecary jar containing a rich medicinal herbal paste, set on a smooth white marble surface. The lighting is soft and natural, creating a high-end clinical yet organic atmosphere. The scene is minimalist with subtle botanical accents of dried herbs in the background, maintaining a clean 'Apothecary Lab' aesthetic with deep forest green and pristine white tones."
+              src="OIP.jpg"
+            />
+          </div>
+          <div class="absolute top-4 left-4">
+            <span
+              class="bg-secondary-container text-on-secondary-container px-3 py-1 text-label-sm font-label-sm rounded-full"
+              >100% Tự nhiên</span
+            >
+          </div>
+        </div>
+        <!-- Right: Product Info -->
+        <div class="flex flex-col justify-center">
+          <nav class="mb-6">
+            <ol
+              class="flex text-label-sm font-label-sm text-outline gap-2 uppercase tracking-widest"
+            >
+              <li>Sản phẩm</li>
+              <li>/</li>
+              <li>Thảo dược</li>
+            </ol>
+          </nav>
+          <h1 class="font-display-xl text-display-xl text-primary mb-4">
+            Cao Thảo Dược Xương Khớp Hoa Ban
+          </h1>
+          <div class="flex items-center gap-2 mb-8">
+            <span class="text-secondary font-headline-md text-headline-md"
+              >350.000đ</span
+            >
+            <span class="text-outline line-through text-body-md ml-4"
+              >420.000đ</span
+            >
+          </div>
+          <p
+            class="text-body-lg font-body-lg text-on-surface-variant mb-10 leading-relaxed"
+          >
+            Giải pháp tinh hoa từ thiên nhiên cho sức khỏe gan của bạn. Chiết
+            xuất cô đặc từ Hoa Ban giúp hỗ trợ thải độc, bảo vệ tế bào gan một
+            cách an toàn và hiệu quả.
+          </p>
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-primary-container text-white py-5 px-12 font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary transition-all active:scale-95 text-center"
+            >
+              Đặt hàng ngay
+            </button>
+            <button
+              class="border border-secondary text-secondary py-5 px-12 font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all text-center"
+            >
+              Tư vấn chuyên gia
+            </button>
+          </div>
+          <div
+            class="mt-12 grid grid-cols-3 gap-4 border-t border-outline-variant pt-8"
+          >
+            <div class="text-center">
+              <span
+                class="material-symbols-outlined text-primary mb-2"
+                data-icon="verified"
+                >verified</span
+              >
+              <p
+                class="text-[10px] uppercase font-bold tracking-tighter text-on-surface"
+              >
+                Kiểm định ISO
+              </p>
+            </div>
+            <div class="text-center">
+              <span
+                class="material-symbols-outlined text-primary mb-2"
+                data-icon="eco"
+                >eco</span
+              >
+              <p
+                class="text-[10px] uppercase font-bold tracking-tighter text-on-surface"
+              >
+                Nguồn gốc Hữu cơ
+              </p>
+            </div>
+            <div class="text-center">
+              <span
+                class="material-symbols-outlined text-primary mb-2"
+                data-icon="local_shipping"
+                >local_shipping</span
+              >
+              <p
+                class="text-[10px] uppercase font-bold tracking-tighter text-on-surface"
+              >
+                Giao hàng toàn quốc
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Detailed Info Bento Grid -->
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Description -->
+        <div
+          class="bg-white p-10 border border-outline-variant col-span-1 md:col-span-2"
+        >
+          <h3
+            class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-3"
+          >
+            <span
+              class="material-symbols-outlined text-secondary"
+              data-icon="description"
+              >description</span
+            >
+            Mô tả sản phẩm
+          </h3>
+          <p
+            class="text-body-md font-body-md text-on-surface-variant leading-loose"
+          >
+            Sản phẩm Cao Thảo Dược Xương Khớp Hoa Ban được chiết xuất hoàn toàn
+            từ Hoa Ban tự nhiên thu hái tại các vùng dược liệu sạch. Thông qua
+            quy trình chưng cất hiện đại trong phòng Lab, chúng tôi giữ trọn vẹn
+            các hoạt chất quý giá giúp hỗ trợ thải độc gan, hạ men gan và phục
+            hồi chức năng gan sau những tổn thương từ bia rượu và thực phẩm bẩn.
+          </p>
+          <div class="mt-8 overflow-hidden rounded-lg">
+            <img
+              alt="Herbal Production"
+              class="w-full h-48 object-cover"
+              data-alt="A macro photograph showing the precise laboratory extraction process of herbal medicines. Glass beakers and clean stainless steel equipment are visible in a bright, clinical white setting. Soft green light reflects off the surfaces, emphasizing the purity and scientific backing of the herbal products. The mood is professional, sterile, and focused on quality control."
+              src="hoa-ban-trang.jpg"
+            />
+          </div>
+        </div>
+        <!-- Ingredients & Usage Stack -->
+        <div class="flex flex-col gap-8">
+          <!-- Ingredients -->
+          <div
+            class="bg-surface-container-low p-8 border border-outline-variant flex-1"
+          >
+            <h3
+              class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-3"
+            >
+              <span
+                class="material-symbols-outlined text-secondary"
+                data-icon="biotech"
+                >biotech</span
+              >
+              Thành phần
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                <span class="text-body-md font-body-md">Hoa Ban (85%)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                <span class="text-body-md font-body-md">Cỏ Ngọt (5%)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                <span class="text-body-md font-body-md">Nước tinh khiết</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Usage -->
+            <div class="bg-primary-container text-white p-8">
+<h3 class="font-headline-md text-headline-md mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="mop">mop</span>
+                        Cách dùng
+                    </h3>
+<p class="text-body-md font-body-md leading-relaxed opacity-90">
+                        Pha 1 thìa với 200ml nước ấm, khuấy đều cho tan hết. Sử dụng uống trực tiếp sau bữa ăn khoảng 30 phút. Duy trì đều đặn 2 lần mỗi ngày để đạt hiệu quả tốt nhất.
+                    </p>
+</div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-zinc-50 border-t border-zinc-200 py-16">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8"
+      >
+        <div class="md:col-span-1">
+          <div class="text-lg font-bold text-[#1B3022] mb-6">
+            Nhà Thuốc Đông Y Hoa Ban
+          </div>
+          <p class="font-manrope text-xs leading-relaxed text-zinc-600">
+            © 2023 Nhà Thuốc Đông Y Hoa Ban. Tinh hoa thảo dược cho cuộc sống
+            hiện đại.
+          </p>
+        </div>
+        <div>
+          <h4
+            class="text-on-surface font-bold text-xs uppercase tracking-widest mb-6"
+          >
+            Liên kết
+          </h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Shipping &amp; Returns</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Wholesale</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-on-surface font-bold text-xs uppercase tracking-widest mb-6"
+          >
+            Sản phẩm
+          </h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Thải độc gan</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Hỗ trợ tiêu hóa</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-manrope text-xs text-zinc-600 hover:text-[#1B3022] transition-colors"
+                href="#"
+                >Trà thảo mộc</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-on-surface font-bold text-xs uppercase tracking-widest mb-6"
+          >
+            Liên hệ
+          </h4>
+          <p class="font-manrope text-xs text-zinc-600 mb-2">
+            Email: zzzz@apothecarylab.com
+          </p>
+          <p class="font-manrope text-xs text-zinc-600 mb-6">
+            Hotline: 1900 8888
+          </p>
+          <div class="flex gap-4">
+            <span
+              class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform"
+              data-icon="facebook"
+              >social_leaderboard</span
+            >
+            <span
+              class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform"
+              data-icon="language"
+              >language</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
